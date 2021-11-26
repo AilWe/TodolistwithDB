@@ -1,0 +1,176 @@
+html {
+    background-color: #E4E9FD;
+    background-image: url("/images/pink.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    padding-top: 50px;
+}
+
+h1 {
+    color: #fff;
+    padding: 10px;
+    font-size: xxx-large;
+}
+
+.box {
+    max-width: 450px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color: #FFBC97;
+    text-align: center;
+}
+
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFBC97;
+}
+
+
+input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #FFBC97;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: xx-large;
+    font-weight: 200;
+    color: #00204a;
+}
+
+.add {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.add:last-child {
+    border-bottom: 0;
+}
+
+.add-button:hover {
+    background-color: darkslategray;
+}
+
+.add-button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #FFBC97;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #FFBC97;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+}
+
+footer {
+    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#create {
+    text-align: center;
+    padding-bottom: 2%;
+}
+.create-listname{
+    margin-right: 1%;
+    margin-left: 1%;
+
+}
+.create-span{
+    font-size: 2.5rem;
+}
+/* CSS */
+.button-45 {
+    align-items: center;
+    background-color: #FFE7E7;
+
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+    outline: 0;
+}
+
+
+.button-45:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-45:hover {
+    background-color: #FFE3E3;
+    border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+

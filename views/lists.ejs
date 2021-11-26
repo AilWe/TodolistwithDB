@@ -1,0 +1,38 @@
+<%- include("header") -%>
+<body>
+<!--     <% if(listTitle === "Saturday" || listTitle === "Sunday"){ %> -->
+<!--         <h1 style="color: purple"> <%= listTitle %> To Do List</h1> -->
+<!--     <% } else{ %> -->
+<!--         <h1 style="color: blue"> <%= listTitle%> To Do List</h1> -->
+<!--     <% } %> -->
+    <div class="box" id="heading">
+        <h1> <%= listTitle %> </h1>
+    </div>
+    <div class="box" >
+        <% newListItems.forEach(function(item){ %>
+            <form action="/delete" method="post">
+                <div class="item">
+                    <input type="checkbox" name="checkbox" onChange="this.form.submit()" value="<%= item._id %>">
+                    <p><%= item.name %></p>
+                </div>
+                <input type="hidden" name="listName" value="<%= listTitle%>">
+            </form>
+
+        <% }); %>
+
+
+
+        <form class="add" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button class = "add-button" type="submit" name="list" value= <%= listTitle%>> + </button>
+        </form>
+
+    </div>
+    <form id="create" method="post" action="/redirect">
+        <label><span class="create-span">Go To</span></label>
+        <input class="create-listname" type="text" name="newListName" placeholder="List Name">
+        <button class="button-45" type="submit">Go</button>
+    </form>
+</body>
+<%- include("footer") -%>
+</html>
